@@ -1,0 +1,2 @@
+token: token del bot provisto por BotFather
+chat_id: id del chat donde funciona en bot, si es un grupo siempre tiene un - adelante
