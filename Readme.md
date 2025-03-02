@@ -5,10 +5,15 @@ Es mi primer Proyecto de vibe coding, usando Claude Sonnet 3.7 y Grok3. Lo insta
 El bot tiene commandos que son autoexplicativos, una vez creado el bot via botfather, pueden cargarlos en editar commandos del bot tambien en botfather:
 
 lista - Muestra la lista de cumpleaños
+
 modificar - Modifica o crea una entrada de cumpleaños.  Formato Nombre Completo,dia,mes,año
+
 cumple - Informa si hoy hay cumpleaños
+
 proximo - Muestra el próximo cumpleaños
+
 ayuda - Muestra la lista de comandos disponibles
+
 
 La unica opcion que no esta listada ahi es por si un usuario de la lista se muere y se lo quiere recordar todos los años, el formato para actualizar seria: 
 /modificar Pirulo Test QEPD,1,1,1967 
