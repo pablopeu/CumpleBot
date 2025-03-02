@@ -18,7 +18,7 @@ La unica opción que no está listada ahi es por si un usuario de la lista se mu
 /modificar Pirulo Test QEPD,1,1,1967
 ```
 
-(si no se sabe el año poner 1900 al crear la lista de cumpleaños) Si el sicario reporto erróneamente una muerte :) agregando un guion después de QEPD le saca esa etiqueta
+(si no se sabes el año poné 1900 al crear la lista de cumpleaños) Si el sicario reporto erróneamente la muerte :) agregando un guion después de QEPD le saca esa etiqueta
 
 ```plaintext
 /modificar Pirulo Test QEPD-,1,1,1967
