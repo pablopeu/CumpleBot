@@ -1,8 +1,8 @@
-**CumpleBot** es un bot para telegram que avisa los cumpleaños de una lista
+**CumpleBot** es un bot para Telegram que avisa los cumpleaños de una lista
 
 Es mi primer Proyecto de vibe coding, usando Claude Sonnet 3.7 y Grok3. Lo instalé en un raspberry pi que tengo conectado a mi impresora 3D, pero puede andar en cualquier Linux que tengan online, los requerimientos son mínimos.
 
-El bot tiene commandos que son auto explicativos, una vez creado el bot via botfather, pueden cargarlos en editar commandos del bot también en botfather:
+El bot tiene commandos que son auto explicativos, una vez creado el bot via Telegram BotFather, pueden cargarlos en editar commandos del bot también en BotFather:
 
 ```plaintext
 lista - Muestra la lista de cumpleaños
