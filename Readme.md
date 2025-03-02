@@ -32,6 +32,10 @@ crea una carpeta JosBot (yo la cree en: /home/pablopeu/JosBot/) y copia los arch
 
 a JosBot.py darle atributos 755
 
+```plaintext
+chmod 755 JosBot.py
+```
+
 El programa lo corro como un servicio, para eso hacer esto:
 
 ```plaintext
