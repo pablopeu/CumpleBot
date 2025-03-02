@@ -38,24 +38,38 @@ sudo nano /etc/systemd/system/josbot.service
 
 y poner lo siguiente:
 
+
+
 [Unit]
+
 Description=JosBot Service
+
 After=network.target
 
 [Service]
+
 Type=simple
+
 ExecStart=/usr/bin/python3 /home/pablopeu/JosBot/JosBot.py (modificar con las rutas correctas a tu instalacion)
+
 WorkingDirectory=/home/pablopeu/JosBot  (modificar con las ruta correcta a tu instalacion)
+
 User=pablopeu (modificar con el nombre de usuario)
+
 Restart=on-failure
 
 [Install]
+
 WantedBy=multi-user.target
+
+
 
 Una vez creado este archivo, ejecutar lo siguiente:
 
 sudo systemctl daemon-reload
+
 sudo systemctl enable josbot.service
+
 sudo systemctl start josbot.service
 
 y verificar que haya arrancado con:
