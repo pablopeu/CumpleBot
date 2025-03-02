@@ -50,9 +50,9 @@ Description=JosBot Service
 After=network.target
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/pablopeu/JosBot/JosBot.py (modificar con las rutas correctas a tu instalacion)
-WorkingDirectory=/home/pablopeu/JosBot (modificar con las ruta correcta a tu instalacion)
-User=pablopeu (modificar con el nombre de usuario)
+ExecStart=/usr/bin/python3 /home/pablopeu/JosBot/JosBot.py # (modificar con las rutas correctas a tu instalacion)
+WorkingDirectory=/home/pablopeu/JosBot # (modificar con las ruta correcta a tu instalacion)
+User=pablopeu # (modificar con el nombre de usuario)
 Restart=on-failure
 [Install]
 WantedBy=multi-user.target
