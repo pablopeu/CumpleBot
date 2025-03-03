@@ -28,31 +28,31 @@ No se pueden borrar contactos via comandos, me parecio una medida de seguridad s
 
 **Para instalar en tu Linux**
 
-crea una carpeta JosBot (yo la cree en: /home/pablopeu/JosBot/) y copia los archivos ahi
+crea una carpeta CumpleBot (yo la cree en: /home/pablopeu/CumpleBot/) y copia los archivos ahi
 
-a JosBot.py darle atributos 755
+a CumpleBot.py darle atributos 755
 
 ```plaintext
-chmod 755 JosBot.py
+chmod 755 CumpleBot.py
 ```
 
 El programa lo corro como un servicio, para eso hacer esto:
 
 ```plaintext
-sudo nano /etc/systemd/system/josbot.service
+sudo nano /etc/systemd/system/Cumplebot.service
 ```
 
 y poner lo siguiente:
 
 ```plaintext
 [Unit]
-Description=JosBot Service
+Description=CumpleBot Service
 After=network.target
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/pablopeu/JosBot/JosBot.py  ## Modificar con las rutas correctas a tu instalacion
-WorkingDirectory=/home/pablopeu/JosBot                      ## Modificar con las ruta correcta a tu instalacion
-User=pablopeu                                               ## Mmodificar con el nombre de usuario
+ExecStart=/usr/bin/python3 /home/pablopeu/CumpleBot/CumpleBot.py  ## Modificar con las rutas correctas a tu instalacion
+WorkingDirectory=/home/pablopeu/CumpleBot                         ## Modificar con las ruta correcta a tu instalacion
+User=pablopeu                                                     ## Mmodificar con el nombre de usuario
 Restart=on-failure
 [Install]
 WantedBy=multi-user.target
@@ -62,20 +62,20 @@ Una vez creado este archivo, ejecutar lo siguiente:
 
 ```plaintext
 sudo systemctl daemon-reload
-sudo systemctl enable josbot.service
-sudo systemctl start josbot.service
+sudo systemctl enable Cumplebot.service
+sudo systemctl start Cumplebot.service
 ```
 
 y verificar que haya arrancado con:
 
 ```plaintext
-sudo systemctl status josbot.service
+sudo systemctl status Cumplebot.service
 ```
 
 ante cualquier error que haga que no arranque se puede ver en:
 
 ```plaintext
-journalctl -u josbot.service -f
+journalctl -u Cumplebot.service -f
 ```
 
 vayan al final con la hora que le dieron inicio al servicio y le preguntan a GROK o alguna IA cual es el problema y que les tire una solucion, no sean vagos y esperen que lo solucione yo...
